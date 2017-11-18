@@ -1,7 +1,18 @@
 package se.webstep.kotlinworkshop
 
 class Fraction(val numerator: Int, val denominator: Int) {
+
+    init {
+        if (denominator == 0) {
+            throw IllegalArgumentException("Division by zero")
+        }
+    }
+
     override fun toString(): String = "$numerator/$denominator"
+    fun value(): Double? {
+
+        return this.numerator.toDouble() / this.denominator.toDouble()
+    }
 }
 
 operator fun Fraction.plus(other: Fraction): Fraction {
