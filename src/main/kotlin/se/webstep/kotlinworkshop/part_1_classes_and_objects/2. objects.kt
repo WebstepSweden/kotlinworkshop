@@ -22,6 +22,10 @@ object AnimalGenerator {
     }
 }
 
+/**************/
+/* try it out */
+/**************/
+
 fun main(args: Array<String>) {
     AnimalGenerator.generateSomeRandomAnimals().forEach {
         println("${it.name} is a ${it.type} who has ${it.numberOfLegs} legs")

@@ -17,6 +17,8 @@ val steveTheDog = Animal("Steve", "dog")
 // use named arguments to create an instance
 val ingelaTheDove = Animal(numberOfLegs = 2, name = "Ingela", type = "dove")
 
+
+
 /****************/
 /* Constructors */
 /****************/
@@ -35,6 +37,8 @@ class Url(val protocol: String, val host: String) {
     override fun toString(): String = address
 }
 
+
+
 /***************/
 /* inheritance */
 /***************/
@@ -47,6 +51,8 @@ class Triangle : Shape(3)
 
 class Rectangle : Shape(4)
 //class Square: Rectangle // nope, Rectangle is final
+
+
 
 /**************/
 /* try it out */

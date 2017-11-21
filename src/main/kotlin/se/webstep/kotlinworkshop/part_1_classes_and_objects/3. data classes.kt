@@ -50,6 +50,10 @@ public final class se.webstep.kotlinworkshop.part_1_classes_and_objects.Cat {
 */
 
 
+/**************/
+/* try it out */
+/**************/
+
 fun main(args: Array<String>) {
     println(Dog("Joshua", true))
     println(Cat("Berit", 9))
