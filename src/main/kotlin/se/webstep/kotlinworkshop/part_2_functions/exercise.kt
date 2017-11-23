@@ -26,8 +26,8 @@ fun mangleNumbers(x: Int, y: Int, first: (Int, Int) -> Int, then: (Int) -> Int):
 }
 
 /**
- * Creates a function concatenator that:
+ * Create a function concatenator that:
  * - takes a string as argument
- * - returns a function that takes another string and returns both string concatenated
+ * - returns a function that takes another string and returns both strings concatenated
  */
 fun concatenator(s1: String): (String) -> String = { s2 -> concat(s1, s2)}
