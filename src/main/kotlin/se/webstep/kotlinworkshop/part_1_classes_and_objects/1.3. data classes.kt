@@ -13,7 +13,7 @@ package se.webstep.kotlinworkshop.part_1_classes_and_objects
 class Dog(val name: String, val barksalot: Boolean)
 /*
 $ javap se/webstep/kotlinworkshop/part_1_classes_and_objects/Dog.class
-Compiled from "1. classes.kt"
+Compiled from "1.1 classes.kt"
 public final class se.webstep.kotlinworkshop.part_1_classes_and_objects.Dog {
   public final java.lang.String getName();
   public final boolean getBarksalot();
@@ -35,7 +35,7 @@ public final class se.webstep.kotlinworkshop.part_1_classes_and_objects.Dog {
 data class Cat(val name: String, val lives: Int)
 /*
 $ javap se/webstep/kotlinworkshop/part_1_classes_and_objects/Cat.class
-Compiled from "1. classes.kt"
+Compiled from "1.1 classes.kt"
 public final class se.webstep.kotlinworkshop.part_1_classes_and_objects.Cat {
   public final java.lang.String getName();
   public final int getLives();

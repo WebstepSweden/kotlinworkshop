@@ -22,7 +22,8 @@ fun subtract(first: Int, second: Int): Int = first - second
 
 /** Function with a default values */
 fun chooseRandomNumbers(count: Int = 5, limit: Int = 37): List<Int> {
-    return (0..count).map { Random().nextInt(limit) }
+    val random = Random()
+    return (0..count).map { random.nextInt(limit) }
 }
 
 

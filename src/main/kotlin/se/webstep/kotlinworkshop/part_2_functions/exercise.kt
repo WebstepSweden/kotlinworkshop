@@ -6,7 +6,7 @@ package se.webstep.kotlinworkshop.part_2_functions
 fun concat(s1: String, s2: String) = s1 + s2
 
 /**
- * Create a function concatDefaults that concatenates two strings defaulting to "Point" and "Less"
+ * Create a function concatDefaults that concatenates two strings defaulting to "Point" and "less"
  */
 fun concatDefaults(s1: String = "Point", s2: String = "less"): String {
     return concat(s1, s2)

@@ -1,7 +1,6 @@
 package se.webstep.kotlinworkshop.part_3_operator_overloading
 
 class Fraction(val numerator: Int, val denominator: Int) {
-
     init {
         if (denominator == 0) {
             throw IllegalArgumentException("Division by zero")
@@ -9,10 +8,8 @@ class Fraction(val numerator: Int, val denominator: Int) {
     }
 
     override fun toString(): String = "$numerator/$denominator"
-    fun value(): Double {
 
-        return this.numerator.toDouble() / this.denominator.toDouble()
-    }
+    fun value(): Double = this.numerator.toDouble() / this.denominator.toDouble()
 }
 
 /** implement operator Fraction.plus that takes a second Fraction and adds them  */
