@@ -41,7 +41,7 @@ class AlienTests : StringSpec({
         lasse.toKlurp().toFlurp() should beTheSameAlienAs(Flurp("LasseExGlurpExKlurp", 5))
     }
 
-    "Glurp -> Klurp -> Flurp -> Klurp -> Glurp -> Flurp - Klurp" {
+    "Glurp -> Klurp -> Flurp -> Klurp -> Glurp -> Flurp -> Klurp" {
         lasse.toKlurp().toFlurp().toKlurp().toGlurp().toFlurp().toKlurp() should beTheSameAlienAs(
                 Klurp("LasseExGlurpExKlurpExFlurpExKlurpExGlurpExFlurp", 4)
         )

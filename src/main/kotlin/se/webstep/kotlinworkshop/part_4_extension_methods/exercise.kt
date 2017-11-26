@@ -20,7 +20,7 @@ data class Klurp(override val name: String, val heads: Int) : Alien
  * their former mutation. Their arms, legs and heads turn into other 
  * attributes and their number also changes, according to this scheme:
  * 
- * from  | to    |  number
+ * from  | to    | number
  * ---------------------------
  * Flurp | Glurp | half
  * Flurp | Klurp | times two
