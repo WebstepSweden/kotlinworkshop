@@ -1,3 +1,5 @@
+/*
+
 import io.kotlintest.matchers.*
 import io.kotlintest.specs.ShouldSpec
 import io.kotlintest.specs.StringSpec
@@ -49,3 +51,5 @@ fun haveSameNumeratorAndDenominator(fraction: Fraction) = object : Matcher<Fract
             fraction.numerator == value.numerator && fraction.denominator == value.denominator,
             "Fraction $fraction should have same properties as $value")
 }
+
+*/

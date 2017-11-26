@@ -1,3 +1,5 @@
+/*
+
 import io.kotlintest.matchers.shouldBe
 import io.kotlintest.specs.StringSpec
 import se.webstep.kotlinworkshop.part_2_functions.concat
@@ -46,3 +48,5 @@ class PartialConcatTests : StringSpec({
         fooConcatenator(" Fighters") shouldBe "Foo Fighters"
     }
 })
+
+*/

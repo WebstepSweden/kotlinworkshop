@@ -39,9 +39,3 @@ data class Klurp(override val name: String, val heads: Int) : Alien
  * Implement extension methods to support these mutations,
  * according to the scheme.
  */
-fun Flurp.toGlurp() = Glurp(name + "ExFlurp", legs / 2)
-fun Flurp.toKlurp() = Klurp(name + "ExFlurp", legs * 2)
-fun Glurp.toFlurp() = Flurp(name + "ExGlurp", arms - 1)
-fun Glurp.toKlurp() = Klurp(name + "ExGlurp", arms * 3)
-fun Klurp.toFlurp() = Flurp(name + "ExKlurp", 5)
-fun Klurp.toGlurp() = Glurp(name + "ExKlurp", 3)

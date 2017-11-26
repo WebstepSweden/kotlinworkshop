@@ -1,3 +1,5 @@
+/*
+
 import io.kotlintest.matchers.*
 import io.kotlintest.specs.StringSpec
 import se.webstep.kotlinworkshop.part_1_classes_and_objects.Food
@@ -39,3 +41,5 @@ fun containIngredientWithTaste(taste: String) = object : Matcher<List<Food>> {
             value.any { it.taste == taste },
             "Food must contain something that is $taste")
 }
+
+*/
