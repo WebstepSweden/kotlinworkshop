@@ -16,4 +16,4 @@ You can run tests using:
 
 Need more inspiration? Take a look at all the documentation found in the [Kotlin web site](https://kotlinlang.org/), [learn about it](https://kotlinlang.org/docs/reference/) or try solving the [Kotlin Koans](https://kotlinlang.org/docs/tutorials/koans.html) from which this workshop has got lots of inspiration. 
 
-Finally, if you have any questions, don't hasitate [crating an issue](https://github.com/uzilan/scalaworkshop/issues) in this repository.
+Finally, if you have any questions, don't hasitate [creating an issue](https://github.com/uzilan/scalaworkshop/issues) in this repository.
