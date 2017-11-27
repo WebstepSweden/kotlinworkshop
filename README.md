@@ -9,7 +9,7 @@ The repository has two branches: solution and exercise. Use the default one, exe
 The tests in the exercise branch are commented. Once you implemented an exercise, uncomment the tests in the corresponding test file and run the tests to see how you did.
 
 You can run tests using:
-- your IDE (I'm assuming you use Intellij but, hey, it's really your choide) 
+- your IDE (I'm assuming you use Intellij but, hey, it's really your choice) 
 - `gradle test` if you have gradle installed on your computer
 - `./gradlew test` (on mac or linux) or `gradlew.bat test` (on Windows) if you don't have gradle installed on your computer
 
