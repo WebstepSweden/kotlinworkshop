@@ -5,6 +5,10 @@ package se.webstep.kotlinworkshop.part_1_classes_and_objects
 /****************/
 
 /**
+ * Data classes are like normal classes, but automatically add som methods such as toString(), hashCode() and equals()
+ */
+
+/**
  * Running javap for a class, this is what been generated:
  * - class definition
  * - getters

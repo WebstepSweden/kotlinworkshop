@@ -5,11 +5,19 @@ package se.webstep.kotlinworkshop.part_1_classes_and_objects
 /***********/
 
 /**
- * Define a class named Animal
- * Define a constructor which takes 3 arguments, of which one is non mandatory
- * Define three getters (val och var) and one setter (var)
+ * Kotlin classes are very compact. In only one row you can define both the class structure,
+ * the default constructor and the fields and there getters and setters.
+ *
+ * The following class:
+ *
+ * - defines a class named Animal
+ * - defines a constructor which takes 3 arguments, of which one is non mandatory
+ * - defines three getters (val och var) and one setter (var)
  */
 class Animal(var name: String, val type: String, val numberOfLegs: Int = 4)
+
+// In Kotlin, you don't need the new keyword for creating new instances.
+// Examples for constructing instances of the class:
 
 // use the given order of arguments to create an instance, skipping the free argument
 val steveTheDog = Animal("Steve", "dog")
@@ -23,15 +31,18 @@ val ingelaTheDove = Animal(numberOfLegs = 2, name = "Ingela", type = "dove")
 /* Constructors */
 /****************/
 
+// init is called whenever a new instance is constructed.
+// Default construtor is built in the class definition
+// Overridden constructors can be added using the constructor function.
 class Url(val protocol: String, val host: String) {
-    private var address = ""
+    private var address = "" // private field with no getter and setter
 
     // initialization
     init {
         address = "${protocol}://${host}"
     }
 
-    // overriden constructor
+    // overridden constructor
     constructor(host: String) : this("http", host)
 
     override fun toString(): String = address
