@@ -4,22 +4,28 @@ package se.webstep.kotlinworkshop.part_3_operator_overloading
 /* operator overloading */
 /************************/
 
+/**
+ * Operators such as -, + and * can be overridden to be used in your own classes,
+ * by defining function that begin with the keyword operator and defining a function
+ * with the corresponding name, such as minus, plus and times.
+ */
+
 data class ComplexNumber(val real: Int, val imaginary: Int) {
     override fun toString(): String = "($real + $imaginary" + "i)"
 }
 
 /**
- * define an addition operator to ComplexNumber which takes another ComplexNumber and adds them
- * comlpex number addition: (a + bi) + (c + di) = (a + c) + (b + d)i
+ * Define an addition operator to ComplexNumber which takes another ComplexNumber and adds them
+ * comlpex number addition: (a + bi) + (c + di) = ((a + c) + (b + d)i)
  */
 operator fun ComplexNumber.plus(other: ComplexNumber) =
         ComplexNumber(this.real + other.real, this.imaginary + other.imaginary)
 
-/** subtraction: (a + bi) - (c + di) = (a - c) + (b - d)i */
+/** subtraction: (a + bi) - (c + di) = ((a - c) + (b - d)i) */
 operator fun ComplexNumber.minus(other: ComplexNumber) =
         ComplexNumber(this.real - other.real, this.imaginary - other.imaginary)
 
-/** multiplication: (a + bi) * (c + di) = (ac - bd) + (bc + ad)i */
+/** multiplication: (a + bi) * (c + di) = ((ac - bd) + (bc + ad)i) */
 operator fun ComplexNumber.times(other: ComplexNumber): ComplexNumber {
     val ac = this.real * other.real
     val bd = this.imaginary * other.imaginary
@@ -39,12 +45,7 @@ fun main(args: Array<String>) {
     println("complex_1_2: ${complex_1_2}")
     println("complex_3_4: ${complex_3_4}")
 
-    val added = complex_1_2 + complex_3_4
-    println("${complex_1_2} + ${complex_3_4} = ${added}")
-
-    val subtracted = complex_3_4 - complex_1_2
-    println("${complex_3_4} - ${complex_1_2} = ${subtracted}")
-
-    val multiplied = complex_1_2 * complex_3_4
-    println("${complex_1_2} * ${complex_3_4} = ${multiplied}")
+    println("${complex_1_2} + ${complex_3_4} = ${complex_1_2 + complex_3_4}")
+    println("${complex_3_4} - ${complex_1_2} = ${complex_3_4 - complex_1_2}")
+    println("${complex_1_2} * ${complex_3_4} = ${complex_1_2 * complex_3_4}")
 }

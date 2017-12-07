@@ -6,12 +6,18 @@ import java.util.*
 /* Functions */
 /*************/
 
-/** Traditional function, like in Java */
+/**
+ * Functions are defined outside classes (inside the are called methods).
+ * A function starts with the keyword fun
+ * Arguments type and the return type must be declared.
+ */
+
+/** Traditional function, like in Java, looks like that: */
 fun add(first: Int, second: Int): Int {
     return first + second
 }
 
-/** One line function, remember the equals sign, no return required */
+/** One line function can also be used. Remember the equals sign, no return required */
 fun subtract(first: Int, second: Int): Int = first - second
 
 
@@ -20,7 +26,7 @@ fun subtract(first: Int, second: Int): Int = first - second
 /* default values */
 /******************/
 
-/** Function with a default values */
+/** Functions can have arguments with default values */
 fun chooseRandomNumbers(count: Int = 5, limit: Int = 37): List<Int> {
     val random = Random()
     return (0..count).map { random.nextInt(limit) }

@@ -6,7 +6,12 @@ import java.util.*
 /* Objects */
 /***********/
 
-/** Define an object with a "static" function */
+/**
+ * Objects are singletons. Fields and methods defined in objects are similar
+ * to static fields and methods in Java.
+ *
+ * The following example defines an object with a field and a function
+ */
 object AnimalGenerator {
     private val random = Random()
     fun generateSomeRandomAnimals(): List<Animal> {
@@ -22,13 +27,14 @@ object AnimalGenerator {
     }
 }
 
+
 /**************/
 /* try it out */
 /**************/
 
 fun main(args: Array<String>) {
     AnimalGenerator.generateSomeRandomAnimals().forEach {
-        println("${it.name} is a ${it.type} who has ${it.numberOfLegs} legs")
+        println("${it.name} is a ${it.type} who has ${it.numberOfLegs} legs") // it is the current instance in the iteration
     }
 
     // or, if you want:
@@ -36,3 +42,23 @@ fun main(args: Array<String>) {
     //     println("${animal.name} is a ${animal.type} who has ${animal.numberOfLegs} legs")
     // }
 }
+
+
+/*********************/
+/* Companion objects */
+/*********************/
+
+/**
+ * Companion objects are defined inside classes and are often used as factories
+ */
+class Furniture(val legs: Int, val name: String) {
+    companion object {
+        fun createChair() = Furniture(4, "Chair")
+        fun createTable() = Furniture(4, "Table")
+    }
+}
+
+// usage:
+val chair = Furniture.createChair()
+val table = Furniture.createTable()
+
