@@ -1,11 +1,9 @@
-/*
-
 import io.kotlintest.matchers.*
 import io.kotlintest.specs.ShouldSpec
 import io.kotlintest.specs.StringSpec
-import se.webstep.kotlinworkshop.part_3_operator_overloading.Fraction
-import se.webstep.kotlinworkshop.part_3_operator_overloading.plus
+import se.webstep.kotlinworkshop.part_3_operator_overloading.*
 
+/*
 private val half = Fraction(1, 2)
 private val third = Fraction(1, 3)
 

@@ -5,8 +5,9 @@ import io.kotlintest.properties.headers
 import io.kotlintest.properties.row
 import io.kotlintest.properties.table
 import io.kotlintest.specs.StringSpec
-import se.webstep.kotlinworkshop.part_5_troll_numbers.*
+//import se.webstep.kotlinworkshop.part_5_troll_numbers.*
 
+/*
 class SimpleTrollNumberTest : StringSpec({
 
     "Constants should have correct values" {
@@ -62,7 +63,9 @@ class SimpleTrollNumberTest : StringSpec({
         }
     }
 })
+*/
 
+/*
 class ComplexTrollNumberTest : StringSpec({
 
     "String parsing should give correct value" {
@@ -103,7 +106,9 @@ class ComplexTrollNumberTest : StringSpec({
         fourteen.value shouldBe 14
     }
 })
+*/
 
+/*
 class TrollNumberUtilsTest : StringSpec({
 
     "Creating troll numbers from integers should generate correct troll numbers" {
@@ -133,3 +138,4 @@ class TrollNumberUtilsTest : StringSpec({
         ten.toString() shouldBe "many-many-two"
     }
 })
+*/

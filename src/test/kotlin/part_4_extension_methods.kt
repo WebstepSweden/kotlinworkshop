@@ -1,11 +1,10 @@
-/*
-
 import io.kotlintest.matchers.Matcher
 import io.kotlintest.matchers.Result
 import io.kotlintest.matchers.should
 import io.kotlintest.specs.StringSpec
 import se.webstep.kotlinworkshop.part_4_extension_methods.*
 
+/*
 class AlienTests : StringSpec({
     val kalle = Flurp("Kalle", 4)
     val lasse = Glurp("Lasse", 6)

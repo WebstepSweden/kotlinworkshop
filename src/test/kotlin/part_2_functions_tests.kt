@@ -1,12 +1,8 @@
-/*
-
 import io.kotlintest.matchers.shouldBe
 import io.kotlintest.specs.StringSpec
-import se.webstep.kotlinworkshop.part_2_functions.concat
-import se.webstep.kotlinworkshop.part_2_functions.concatDefaults
-import se.webstep.kotlinworkshop.part_2_functions.concatenator
-import se.webstep.kotlinworkshop.part_2_functions.mangleNumbers
+import se.webstep.kotlinworkshop.part_2_functions.*
 
+/*
 class ConcatenateTests : StringSpec({
     "Hello and World should be Hello World" {
         concat("Hello ", "World") shouldBe "Hello World"

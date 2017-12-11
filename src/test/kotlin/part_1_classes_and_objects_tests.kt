@@ -1,10 +1,8 @@
-/*
-
 import io.kotlintest.matchers.*
 import io.kotlintest.specs.StringSpec
-import se.webstep.kotlinworkshop.part_1_classes_and_objects.Food
-import se.webstep.kotlinworkshop.part_1_classes_and_objects.Kitchen
+import se.webstep.kotlinworkshop.part_1_classes_and_objects.*
 
+/*
 class FoodTests : StringSpec({
     "Constructor with all arguments should work ok" {
         val lemon = Food("Lemon", "sour")
