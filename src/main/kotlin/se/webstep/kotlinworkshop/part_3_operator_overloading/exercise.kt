@@ -12,7 +12,12 @@ class Fraction(val numerator: Int, val denominator: Int) {
     fun value(): Double = this.numerator.toDouble() / this.denominator.toDouble()
 }
 
-/** implement operator Fraction.plus that takes a second Fraction and adds them  */
+/**
+ * implement operator Fraction.plus that takes a second Fraction and adds them together
+ *
+ * Just as a reminder, adding fractions works like this:
+ * a/x + b/y = (ay + bx)/xy
+ */
 operator fun Fraction.plus(other: Fraction): Fraction {
     val num = (this.numerator * other.denominator) + (other.numerator * this.denominator)
     val denom = this.denominator * other.denominator

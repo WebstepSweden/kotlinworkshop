@@ -6,7 +6,7 @@ package se.webstep.kotlinworkshop.part_1_classes_and_objects
 
 /**
  * Kotlin classes are very compact. In only one row you can define both the class structure,
- * the default constructor and the fields and there getters and setters.
+ * the default constructor and the fields and their getters and setters.
  *
  * The following class:
  *

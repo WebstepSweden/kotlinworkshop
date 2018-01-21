@@ -1,13 +1,13 @@
 package se.webstep.kotlinworkshop.part_2_functions
 
-import java.util.*
+import java.util.Random
 
 /*************/
 /* Functions */
 /*************/
 
 /**
- * Functions are defined outside classes (inside the are called methods).
+ * Functions are defined outside classes (inside they are called methods).
  * A function starts with the keyword fun
  * Arguments type and the return type must be declared.
  */
@@ -29,7 +29,7 @@ fun subtract(first: Int, second: Int): Int = first - second
 /** Functions can have arguments with default values */
 fun chooseRandomNumbers(count: Int = 5, limit: Int = 37): List<Int> {
     val random = Random()
-    return (0..count).map { random.nextInt(limit) }
+    return (0 until count).map { random.nextInt(limit) }
 }
 
 
