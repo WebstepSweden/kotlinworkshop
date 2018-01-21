@@ -6,7 +6,7 @@ package se.webstep.kotlinworkshop.part_2_functions
 
 
 /**
- * Create a function concatDefaults that concatenates two strings defaulting to "Point" and "less"
+ * Create a function concatDefaults that concatenates two strings (s1 and s2) defaulting to "Point" and "less"
  */
 
 

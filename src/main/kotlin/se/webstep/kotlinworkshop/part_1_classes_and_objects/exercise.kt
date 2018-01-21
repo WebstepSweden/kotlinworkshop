@@ -7,6 +7,6 @@ package se.webstep.kotlinworkshop.part_1_classes_and_objects
 
 
 /**
- * Define an object Kitchen with function createSalad which return a list of at least three ingredients,
+ * Define an object Kitchen with function createSalad which return a list of at least three ingredients (Foods),
  * of which at least one is spicy
  */

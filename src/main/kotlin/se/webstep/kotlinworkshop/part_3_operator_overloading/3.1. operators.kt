@@ -16,7 +16,7 @@ data class ComplexNumber(val real: Int, val imaginary: Int) {
 
 /**
  * Define an addition operator to ComplexNumber which takes another ComplexNumber and adds them
- * comlpex number addition: (a + bi) + (c + di) = ((a + c) + (b + d)i)
+ * complex number addition: (a + bi) + (c + di) = ((a + c) + (b + d)i)
  */
 operator fun ComplexNumber.plus(other: ComplexNumber) =
         ComplexNumber(this.real + other.real, this.imaginary + other.imaginary)

@@ -30,11 +30,11 @@ package se.webstep.kotlinworkshop.part_5_troll_numbers
  * 3.toTrollNumber() // three
  * 15.toTrollNumber() // many-many-many-three
  *
- * Lastly, they can be added to eacch other, like that:
+ * Lastly, they can be added to each other, like that:
  * many-one + three // many-many
  * two + three // many-one
  *
- * This exercise uses many of the stuff we went through, such as classes, functions, operator oveloading,
+ * This exercise uses many of the stuff we went through, such as classes, functions, operator overloading,
  * extension methods etc.
  *
  * Implement troll numbers and make the tests green!
