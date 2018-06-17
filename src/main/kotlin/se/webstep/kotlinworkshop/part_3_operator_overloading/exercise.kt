@@ -2,9 +2,7 @@ package se.webstep.kotlinworkshop.part_3_operator_overloading
 
 class Fraction(val numerator: Int, val denominator: Int) {
     init {
-        if (denominator == 0) {
-            throw IllegalArgumentException("Division by zero")
-        }
+        require(denominator != 0) { "Division by zero" }
     }
 
     override fun toString(): String = "$numerator/$denominator"
@@ -20,9 +18,7 @@ class Fraction(val numerator: Int, val denominator: Int) {
  */
 
 
-
 /** implement an operator on Int that takes a Fraction and adds them */
-
 
 
 /** implement an operator on Fraction that takes an Int and adds them */
