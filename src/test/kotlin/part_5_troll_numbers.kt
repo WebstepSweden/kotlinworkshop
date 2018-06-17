@@ -92,7 +92,7 @@ class ComplexTrollNumberTest : StringSpec({
         }
     }
 
-    "Creating complex troll numbers should work propertly" {
+    "Creating complex troll numbers should work properly" {
         val five = many - one
         val fourteen = many - many - many - two
 
