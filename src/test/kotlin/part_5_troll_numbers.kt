@@ -1,10 +1,3 @@
-import io.kotlintest.matchers.shouldBe
-import io.kotlintest.matchers.shouldThrow
-import io.kotlintest.properties.forAll
-import io.kotlintest.properties.headers
-import io.kotlintest.properties.row
-import io.kotlintest.properties.table
-import io.kotlintest.specs.StringSpec
 //import se.webstep.kotlinworkshop.part_5_troll_numbers.*
 
 /*
@@ -95,7 +88,7 @@ class ComplexTrollNumberTest : StringSpec({
         }
     }
 
-    "Creating complex troll numbers should work propertly" {
+    "Creating complex troll numbers should work properly" {
         val five = many - one
         val fourteen = many - many - many - two
 
