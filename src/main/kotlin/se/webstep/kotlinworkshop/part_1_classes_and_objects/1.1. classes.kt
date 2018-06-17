@@ -34,7 +34,7 @@ val ingelaTheDove = Animal(numberOfLegs = 2, name = "Ingela", type = "dove")
 // init is called whenever a new instance is constructed.
 // Default construtor is built in the class definition
 // Overridden constructors can be added using the constructor function.
-class Url(val protocol: String, val host: String) {
+class Url(protocol: String, host: String) {
     private var address = "" // private field with no getter and setter
 
     // initialization
