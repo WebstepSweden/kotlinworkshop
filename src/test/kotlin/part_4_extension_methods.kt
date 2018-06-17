@@ -1,9 +1,3 @@
-import io.kotlintest.matchers.Matcher
-import io.kotlintest.matchers.Result
-import io.kotlintest.matchers.should
-import io.kotlintest.specs.StringSpec
-import se.webstep.kotlinworkshop.part_4_extension_methods.*
-
 /*
 class AlienTests : StringSpec({
     val kalle = Flurp("Kalle", 4)
@@ -61,8 +55,8 @@ fun beTheSameAlienAs(alien: Alien) = object : Matcher<Alien> {
 // help function that compares the number of legs, hands and heads
 fun numbersAreTheSame(alien: Alien, value: Alien): Boolean {
     return when (value) {
-        is Flurp -> (alien as Flurp).legs == (value as Flurp).legs
-        is Glurp -> (alien as Glurp).arms == (value as Glurp).arms
+        is Flurp -> (alien as Flurp).legs == value.legs
+        is Glurp -> (alien as Glurp).arms == value.arms
         else -> (alien as Klurp).heads == (value as Klurp).heads
     }
 }
