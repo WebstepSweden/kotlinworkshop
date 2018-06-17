@@ -39,7 +39,7 @@ class Url(protocol: String, host: String) {
 
     // initialization
     init {
-        address = "${protocol}://${host}"
+        address = "$protocol://$host"
     }
 
     // overridden constructor
