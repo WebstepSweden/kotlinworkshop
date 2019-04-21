@@ -1,11 +1,16 @@
-import io.kotlintest.matchers.*
+import io.kotlintest.Matcher
+import io.kotlintest.Result
+import io.kotlintest.should
+import io.kotlintest.shouldBe
+import io.kotlintest.shouldThrow
 import io.kotlintest.specs.ShouldSpec
 import io.kotlintest.specs.StringSpec
-import se.webstep.kotlinworkshop.part_3_operator_overloading.*
+import se.webstep.kotlinworkshop.part_3_operator_overloading.Fraction
+//import se.webstep.kotlinworkshop.part_3_operator_overloading.plus
 
-/*
 private val half = Fraction(1, 2)
 private val third = Fraction(1, 3)
+
 
 class FractionCreationTests : StringSpec({
     "Fraction toString() should look ok" {
@@ -23,6 +28,7 @@ class FractionCreationTests : StringSpec({
     }
 })
 
+/*
 class FractionAdditionTests : ShouldSpec({
     "Adding two fractions" {
         should("result in correct new fraction") {
@@ -42,12 +48,13 @@ class FractionAdditionTests : ShouldSpec({
         }
     }
 })
+*/
 
 // custom matcher to compare two Fractions based on their numerator and denominator
 fun haveSameNumeratorAndDenominator(fraction: Fraction) = object : Matcher<Fraction> {
     override fun test(value: Fraction) = Result(
             fraction.numerator == value.numerator && fraction.denominator == value.denominator,
-            "Fraction $fraction should have same properties as $value")
+            "Fraction $fraction should have same properties as $value",
+            "Fraction $fraction should not have same properties as $value")
 }
 
-*/

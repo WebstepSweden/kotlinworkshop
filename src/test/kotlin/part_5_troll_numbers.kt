@@ -1,4 +1,19 @@
-//import se.webstep.kotlinworkshop.part_5_troll_numbers.*
+import io.kotlintest.shouldBe
+import io.kotlintest.shouldThrow
+import io.kotlintest.specs.StringSpec
+import io.kotlintest.tables.forAll
+import io.kotlintest.tables.headers
+import io.kotlintest.tables.row
+import io.kotlintest.tables.table
+//import se.webstep.kotlinworkshop.part_5_troll_numbers.SimpleTrollNumber
+//import se.webstep.kotlinworkshop.part_5_troll_numbers.lots
+//import se.webstep.kotlinworkshop.part_5_troll_numbers.many
+//import se.webstep.kotlinworkshop.part_5_troll_numbers.minus
+//import se.webstep.kotlinworkshop.part_5_troll_numbers.one
+//import se.webstep.kotlinworkshop.part_5_troll_numbers.plus
+//import se.webstep.kotlinworkshop.part_5_troll_numbers.three
+//import se.webstep.kotlinworkshop.part_5_troll_numbers.toTrollNumber
+//import se.webstep.kotlinworkshop.part_5_troll_numbers.two
 
 /*
 class SimpleTrollNumberTest : StringSpec({

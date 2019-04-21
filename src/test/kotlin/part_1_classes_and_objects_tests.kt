@@ -1,6 +1,11 @@
-import io.kotlintest.matchers.*
+import io.kotlintest.Matcher
+import io.kotlintest.Result
+import io.kotlintest.matchers.gte
+import io.kotlintest.should
+import io.kotlintest.shouldBe
 import io.kotlintest.specs.StringSpec
-import se.webstep.kotlinworkshop.part_1_classes_and_objects.*
+//import se.webstep.kotlinworkshop.part_1_classes_and_objects.Food
+//import se.webstep.kotlinworkshop.part_1_classes_and_objects.Kitchen
 
 /*
 class FoodTests : StringSpec({
@@ -22,7 +27,9 @@ class FoodTests : StringSpec({
         lychee.taste shouldBe "strange"
     }
 })
+*/
 
+/*
 class KitchenTests : StringSpec({
     "Salad should have at least three ingredients" {
         Kitchen.createSalad().size shouldBe gte(3)
@@ -32,12 +39,12 @@ class KitchenTests : StringSpec({
         Kitchen.createSalad() should containIngredientWithTaste("spicy")
     }
 })
+*/
 
 // custom matcher to see if a list of foods contains one with given taste
-fun containIngredientWithTaste(taste: String) = object : Matcher<List<Food>> {
-    override fun test(value: List<Food>) = Result(
-            value.any { it.taste == taste },
-            "Food must contain something that is $taste")
-}
-
-*/
+//fun containIngredientWithTaste(taste: String) = object : Matcher<List<Food>> {
+//    override fun test(value: List<Food>) = Result(
+//            value.any { it.taste == taste },
+//            "Food must contain something that is $taste",
+//            "Food must not contain something that is $taste")
+//}
