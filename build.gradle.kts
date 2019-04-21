@@ -1,10 +1,9 @@
 plugins {
-    kotlin("jvm") version "1.2.50"
+    `kotlin-dsl`
 }
 
 dependencies {
-    compile(kotlin("stdlib"))
-    testCompile("io.kotlintest:kotlintest:2.0.7")
+    testImplementation("io.kotlintest:kotlintest:3.3.2")
 }
 
 repositories {
