@@ -32,7 +32,7 @@ val ingelaTheDove = Animal(numberOfLegs = 2, name = "Ingela", type = "dove")
 /****************/
 
 // init is called whenever a new instance is constructed.
-// Default construtor is built in the class definition
+// Default constructor is built in the class definition
 // Overridden constructors can be added using the constructor function.
 class Url(protocol: String, host: String) {
     private var address = "" // private field with no getter and setter
@@ -61,7 +61,7 @@ open class Shape(val edges: Int)
 class Triangle : Shape(3)
 
 class Rectangle : Shape(4)
-//class Square: Rectangle // nope, Rectangle is final
+//class Square: Rectangle() // nope, Rectangle is final
 
 
 
