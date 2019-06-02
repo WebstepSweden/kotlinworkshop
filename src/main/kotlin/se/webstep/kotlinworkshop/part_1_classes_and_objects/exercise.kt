@@ -2,7 +2,7 @@ package se.webstep.kotlinworkshop.part_1_classes_and_objects
 
 /**
  * Define a class named Food with a mandatory name and a taste which defaults to "sweet".
- * Taste should be able to be changed
+ * The taste field should be changeable
  */
 
 
