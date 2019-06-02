@@ -1,7 +1,7 @@
 package se.webstep.kotlinworkshop.part_5_troll_numbers
 
 /**
- * Troll have issues with numbers. Therefore, the count like that:
+ * Troll have issues with numbers. Therefore, they count like that:
  *
  * one, two, three, many
  * many-one, many-two, many-three, many-many
