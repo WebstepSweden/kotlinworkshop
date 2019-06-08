@@ -8,6 +8,7 @@ val test by tasks.getting(Test::class) {
 
 dependencies {
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
+    implementation("ch.qos.logback:logback-classic:1.2.3")
     testImplementation("io.kotlintest:kotlintest-runner-junit5:3.3.2")
 }
 
