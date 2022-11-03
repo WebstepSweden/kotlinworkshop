@@ -3,3 +3,4 @@ target/
 .kotlintest
 build
 out
+/.idea/

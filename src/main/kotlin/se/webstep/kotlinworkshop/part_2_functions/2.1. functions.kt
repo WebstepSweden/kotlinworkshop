@@ -41,5 +41,5 @@ fun chooseRandomNumbers(count: Int = 5, limit: Int = 37): List<Int> {
 fun main(args: Array<String>) {
     println("3 + 7 = ${add(3, 7)}")
     println("5 - 3 = ${subtract(5, 3)}")
-    println("Random numbers: " + chooseRandomNumbers(limit = 73))
+    println("Random numbers: ${chooseRandomNumbers(limit = 73)}")
 }

@@ -1,4 +1,3 @@
-package se.webstep.kotlinworkshop.part_3_operator_overloading
 
 /************************/
 /* operator overloading */
@@ -19,11 +18,11 @@ data class ComplexNumber(val real: Int, val imaginary: Int) {
  * complex number addition: (a + bi) + (c + di) = ((a + c) + (b + d)i)
  */
 operator fun ComplexNumber.plus(other: ComplexNumber) =
-    ComplexNumber(this.real + other.real, this.imaginary + other.imaginary)
+        ComplexNumber(this.real + other.real, this.imaginary + other.imaginary)
 
 /** subtraction: (a + bi) - (c + di) = ((a - c) + (b - d)i) */
 operator fun ComplexNumber.minus(other: ComplexNumber) =
-    ComplexNumber(this.real - other.real, this.imaginary - other.imaginary)
+        ComplexNumber(this.real - other.real, this.imaginary - other.imaginary)
 
 /** multiplication: (a + bi) * (c + di) = ((ac - bd) + (bc + ad)i) */
 operator fun ComplexNumber.times(other: ComplexNumber): ComplexNumber {
@@ -38,14 +37,16 @@ operator fun ComplexNumber.times(other: ComplexNumber): ComplexNumber {
 /* try it out */
 /**************/
 
-fun main(args: Array<String>) {
-    val complex_1_2 = ComplexNumber(1, 2)
-    val complex_3_4 = ComplexNumber(3, 4)
+//val complex_1_2 = ComplexNumber(1, 2)
+//val complex_3_4 = ComplexNumber(3, 4)
+//
+//println("complex_1_2: $complex_1_2")
+//println("complex_3_4: $complex_3_4")
+//
+//println("$complex_1_2 + $complex_3_4 = ${complex_1_2 + complex_3_4}")
+//println("$complex_3_4 - $complex_1_2 = ${complex_3_4 - complex_1_2}")
+//println("$complex_1_2 * $complex_3_4 = ${complex_1_2 * complex_3_4}")
 
-    println("complex_1_2: $complex_1_2")
-    println("complex_3_4: $complex_3_4")
-
-    println("$complex_1_2 + $complex_3_4 = ${complex_1_2 + complex_3_4}")
-    println("$complex_3_4 - $complex_1_2 = ${complex_3_4 - complex_1_2}")
-    println("$complex_1_2 * $complex_3_4 = ${complex_1_2 * complex_3_4}")
-}
+/**************/
+/* Exercise!  */
+/**************/
