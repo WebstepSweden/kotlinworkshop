@@ -15,7 +15,7 @@ data class Person(val name: String)
 fun String.toPerson() = Person(this)
 
 data class ComplexNumber(val real: Int, val imaginary: Int) {
-    override fun toString(): String = "($real + $imaginary" + "i)"
+    override fun toString(): String = "($real + ${imaginary}i)"
 }
 
 /** An extension method to Int that creates a ComplexNumber */

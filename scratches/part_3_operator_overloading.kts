@@ -10,7 +10,7 @@
  */
 
 data class ComplexNumber(val real: Int, val imaginary: Int) {
-    override fun toString(): String = "($real + $imaginary" + "i)"
+    override fun toString(): String = "($real + ${imaginary}i)"
 }
 
 /**

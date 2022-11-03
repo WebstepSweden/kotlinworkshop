@@ -16,7 +16,7 @@ fun doStuffWithString(s: String, f: (String) -> String, g: (String) -> String): 
 }
 
 // Functions that calls doStuffWithString with a given string and two functions
-fun capitalizeAndAussify(word: String) = doStuffWithString(word, String::capitalize, { s -> s + ", mate" })
+fun capitalizeAndAussify(word: String) = doStuffWithString(word, String::capitalize, { s -> "$s, mate" })
 
 fun trumpifyAndReverse(word: String) = doStuffWithString(word, { s -> s + " America first" }, String::reversed)
 
@@ -49,7 +49,7 @@ val rangePlus10 = (0..10).map { add10(it) }
 /**************/
 
 fun main(args: Array<String>) {
-    println("""capitalizeAndAussify("hello"): """ + capitalizeAndAussify("hello"))
-    println("""trumpifyAndReverse("Who said")): """ + trumpifyAndReverse("Who said"))
-    println("rangeTimes10: " + rangePlus10)
+    println("""capitalizeAndAussify("hello"): ${capitalizeAndAussify("hello")}""")
+    println("""trumpifyAndReverse("Who said")): ${trumpifyAndReverse("Who said")}""")
+    println("rangeTimes10: $rangePlus10")
 }

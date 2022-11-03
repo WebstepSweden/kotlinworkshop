@@ -59,7 +59,7 @@ fun chooseRandomNumbers(count: Int = 5, limit: Int = 37): List<Int> {
 /* try it out */
 /**************/
 
-println("Random numbers: " + chooseRandomNumbers(limit = 73))
+println("Random numbers: ${chooseRandomNumbers(limit = 73)}")
 
 /**************/
 /* Exercise!  */
@@ -111,19 +111,17 @@ fun doStuffWithString(s: String, f: (String) -> String, g: (String) -> String): 
 }
 
 // Functions that calls doStuffWithString with a given string and two functions
-fun capitalizeAndAussify(word: String) = doStuffWithString(word, String::capitalize, { s -> s + ", mate" })
+fun capitalizeAndAussify(word: String) = doStuffWithString(word, String::capitalize, { s -> "$s, mate" })
 
-fun trumpifyAndReverse(word: String) = doStuffWithString(word, { s -> s + " America first" }, String::reversed)
+fun trumpifyAndReverse(word: String) = doStuffWithString(word, { s -> "$s America first" }, String::reversed)
 
 /**************/
 /* try it out */
 /**************/
 
-//println("""capitalizeAndAussify("hello"): """
-//        + capitalizeAndAussify("hello"))
-//
-//println("""trumpifyAndReverse("Who said")): """
-//        + trumpifyAndReverse("Who said"))
+println("""capitalizeAndAussify("hello"): ${capitalizeAndAussify("hello")}""")
+
+println("""trumpifyAndReverse("Who said")): ${trumpifyAndReverse("Who said")}""")
 
 
 
