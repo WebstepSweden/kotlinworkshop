@@ -1,10 +1,10 @@
-import io.kotlintest.shouldBe
-import io.kotlintest.shouldThrow
-import io.kotlintest.specs.StringSpec
-import io.kotlintest.tables.forAll
-import io.kotlintest.tables.headers
-import io.kotlintest.tables.row
-import io.kotlintest.tables.table
+import io.kotest.assertions.throwables.shouldThrow
+import io.kotest.core.spec.style.StringSpec
+import io.kotest.data.forAll
+import io.kotest.data.headers
+import io.kotest.data.row
+import io.kotest.data.table
+import io.kotest.matchers.shouldBe
 import se.webstep.kotlinworkshop.part_5_troll_numbers.SimpleTrollNumber
 import se.webstep.kotlinworkshop.part_5_troll_numbers.lots
 import se.webstep.kotlinworkshop.part_5_troll_numbers.many
@@ -15,17 +15,16 @@ import se.webstep.kotlinworkshop.part_5_troll_numbers.three
 import se.webstep.kotlinworkshop.part_5_troll_numbers.toTrollNumber
 import se.webstep.kotlinworkshop.part_5_troll_numbers.two
 
-
 class SimpleTrollNumberTest : StringSpec({
 
     "Constants should have correct values" {
         val table = table(
-                headers("constant", "expected value"),
-                row(one, 1),
-                row(two, 2),
-                row(three, 3),
-                row(many, 4),
-                row(lots, 16)
+            headers("constant", "expected value"),
+            row(one, 1),
+            row(two, 2),
+            row(three, 3),
+            row(many, 4),
+            row(lots, 16)
         )
 
         forAll(table) { constant, expectedValue ->
@@ -35,13 +34,13 @@ class SimpleTrollNumberTest : StringSpec({
 
     "Constants should have correct toString() value" {
         val table = table(
-                headers("constant", "value"),
-                row(one, "one"),
-                row(two, "two"),
-                row(three, "three"),
-                row(many, "many"),
-                row(lots, "lots"),
-                row(SimpleTrollNumber(42), "unknown")
+            headers("constant", "value"),
+            row(one, "one"),
+            row(two, "two"),
+            row(three, "three"),
+            row(many, "many"),
+            row(lots, "lots"),
+            row(SimpleTrollNumber(42), "unknown")
         )
 
         forAll(table) { constant, expectedToString ->
@@ -51,12 +50,12 @@ class SimpleTrollNumberTest : StringSpec({
 
     "String parsing should give correct constant" {
         val table = table(
-                headers("string", "constant"),
-                row("one", one),
-                row("two", two),
-                row("three", three),
-                row("many", many),
-                row("lots", lots)
+            headers("string", "constant"),
+            row("one", one),
+            row("two", two),
+            row("three", three),
+            row("many", many),
+            row("lots", lots)
         )
 
         forAll(table) { string, expectedConstant ->
@@ -72,18 +71,16 @@ class SimpleTrollNumberTest : StringSpec({
     }
 })
 
-
-
 class ComplexTrollNumberTest : StringSpec({
 
     "String parsing should give correct value" {
         val table = table(
-                headers("string", "expected value"),
-                row("many-two", 6),
-                row("many-many-three", 11),
-                row("many", many.value),
-                row("many-many-many-many", lots.value),
-                row("lots", lots.value)
+            headers("string", "expected value"),
+            row("many-two", 6),
+            row("many-many-three", 11),
+            row("many", many.value),
+            row("many-many-many-many", lots.value),
+            row("lots", lots.value)
         )
 
         forAll(table) { string, expectedValue ->
@@ -93,10 +90,11 @@ class ComplexTrollNumberTest : StringSpec({
 
     "Parsing complex numbers should give correct toString() value" {
         val table = table(
-                headers("complex number", "value"),
-                row("many-one", "many-one"),
-                row("many-many", "many-many"),
-                row("many-many-three", "many-many-three"))
+            headers("complex number", "value"),
+            row("many-one", "many-one"),
+            row("many-many", "many-many"),
+            row("many-many-three", "many-many-three")
+        )
 
         forAll(table) { string, expectedToString ->
             string.toTrollNumber().toString() shouldBe expectedToString
@@ -114,8 +112,6 @@ class ComplexTrollNumberTest : StringSpec({
         fourteen.value shouldBe 14
     }
 })
-
-
 
 class TrollNumberUtilsTest : StringSpec({
 

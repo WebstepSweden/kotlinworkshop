@@ -1,5 +1,5 @@
 plugins {
-    id("org.jetbrains.kotlin.jvm").version("1.3.40")
+    id("org.jetbrains.kotlin.jvm").version("1.7.20")
 }
 
 val test by tasks.getting(Test::class) {
@@ -8,10 +8,10 @@ val test by tasks.getting(Test::class) {
 
 dependencies {
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
-    implementation("ch.qos.logback:logback-classic:1.2.3")
-    testImplementation("io.kotlintest:kotlintest-runner-junit5:3.3.3")
+    implementation("ch.qos.logback:logback-classic:1.4.4")
+    testImplementation("io.kotest:kotest-runner-junit5-jvm:5.5.4")
 }
 
 repositories {
-    jcenter()
+    mavenCentral()
 }
