@@ -1,10 +1,10 @@
-import io.kotlintest.shouldBe
-import io.kotlintest.shouldThrow
-import io.kotlintest.specs.StringSpec
-import io.kotlintest.tables.forAll
-import io.kotlintest.tables.headers
-import io.kotlintest.tables.row
-import io.kotlintest.tables.table
+import io.kotest.assertions.throwables.shouldThrow
+import io.kotest.core.spec.style.StringSpec
+import io.kotest.data.forAll
+import io.kotest.data.headers
+import io.kotest.data.row
+import io.kotest.data.table
+import io.kotest.matchers.shouldBe
 //import se.webstep.kotlinworkshop.part_5_troll_numbers.SimpleTrollNumber
 //import se.webstep.kotlinworkshop.part_5_troll_numbers.lots
 //import se.webstep.kotlinworkshop.part_5_troll_numbers.many

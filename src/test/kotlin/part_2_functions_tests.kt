@@ -1,5 +1,5 @@
-import io.kotlintest.shouldBe
-import io.kotlintest.specs.StringSpec
+import io.kotest.core.spec.style.StringSpec
+import io.kotest.matchers.shouldBe
 //import se.webstep.kotlinworkshop.part_2_functions.concat
 //import se.webstep.kotlinworkshop.part_2_functions.concatDefaults
 //import se.webstep.kotlinworkshop.part_2_functions.concatenator
